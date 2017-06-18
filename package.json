@@ -4,8 +4,8 @@
     "type": "git",
     "url": "https://github.com/vishaltelangre/music-dl"
   },
-  "version": "0.0.2",
-  "description": "Download audio song playlists/albums from multiple providers!",
+  "version": "0.0.3",
+  "description": "Download audio song playlists/albums from multiple song providers!",
   "main": "index.js",
   "author": "Vishal Telangre <the@vishaltelangre.com>",
   "license": "MIT",
