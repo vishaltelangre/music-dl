@@ -21,6 +21,10 @@ in future.
 npm install -g music-dl
 ```
 
+Please use the same command
+to upgrade the already installed package
+to the latest version.
+
 ### Usage
 
 ```
