@@ -33,6 +33,20 @@ Options:
   -h, --help             Display help and usage details
 ```
 
+### How to get/create an API key for YouTube?
+
+YouTube requires an API key to allow searching the tracks.
+That is why `music-dl` needs it.
+
+Please follow instructions provided on [this wiki](https://github.com/vishaltelangre/music-dl/wiki/How-to-get-or-create-a-YouTube-API-Key%3F).
+
+You will need to provide it only once using following command,
+which will be stored at `$HOME/.music-dl.json` on your computer.
+
+```
+music-dl -k API_KEY_HERE
+```
+
 ### Does it really download from these sites?
 
 Nope, it doesn't.
@@ -40,8 +54,6 @@ It just retrieves the list of songs
 and information such as title, album, artists, etc.
 from these sites.
 It then downloads the matching music from YouTube.
-
-
 
 ### Copyright and License
 
