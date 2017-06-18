@@ -1,5 +1,7 @@
 # music-dl
 
+<img src="https://user-images.githubusercontent.com/876195/27261560-261ebf7e-5463-11e7-99d4-40c3481eab17.png" width="300" />
+
 Download music from saavn.com, gaana.com, etc.
 
 ### See it in action!
