@@ -4,7 +4,7 @@ Download music from saavn.com, gaana.com, etc.
 
 ### See it in action!
 
-[![asciicast](https://user-images.githubusercontent.com/876195/27258287-d2b1e846-5414-11e7-9630-6db512fb3df5.gif)](https://asciinema.org/a/125142?t=4)
+[![asciicast](https://user-images.githubusercontent.com/876195/27260168-c5d803fc-5442-11e7-8163-a08955d424ca.gif)](https://asciinema.org/a/125142?t=4)
 
 With ID3 tags!
 
