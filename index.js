@@ -8,8 +8,9 @@ const {name, version} = require('./package.json');
 
 const { Settings, SettingsManifestPath} = require('./lib/settings');
 const Saavn = require('./lib/providers/saavn');
+const Gaana = require('./lib/providers/gaana');
 
-const supportedProviders = [ Saavn ];
+const supportedProviders = [ Saavn, Gaana ];
 
 cli.enable('version');
 cli.setApp(name, version);
@@ -39,11 +40,12 @@ if (!cli.args[0]) {
 
 const tracklistUrl = cli.args.shift();
 
-_.each(supportedProviders, providerKlass => {
-  const provider = new providerKlass(tracklistUrl);
-  if (provider.canIdentify()) {
-    provider.downloadTracks();
-  } else {
-    cli.fatal(`Couldn't identify the provided playlist/album URL: "${tracklistUrl}"`);
-  }
+const matchedProvider = _.find(supportedProviders, providerKlass => {
+  return (new providerKlass(tracklistUrl)).canIdentify();
 });
+
+if (matchedProvider) {
+  (new matchedProvider(tracklistUrl)).downloadTracks();
+} else {
+  cli.fatal(`Couldn't identify the provided playlist/album URL: "${tracklistUrl}"`);
+}

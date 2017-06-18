@@ -11,7 +11,7 @@ With ID3 tags!
 ![id3-tags.png](https://user-images.githubusercontent.com/876195/27254951-4508b762-53b1-11e7-84e1-f5addc2953fa.png)
 
 
-**NOTE:** Currently, it only supports saavn.com,
+**NOTE:** Currently, it only supports saavn.com and gaana.com,
 but there will be support to download from other sites as well
 in future.
 
@@ -31,6 +31,17 @@ Options:
   -k, --api_key STRING   API Key of YoutTube
   -v, --version          Display the current version
   -h, --help             Display help and usage details
+```
+
+**Examples:**
+
+Just provide the link of a album or a playlist to `music-dl` and hit enter!
+
+```
+music-dl http://gaana.com/album/aashiqui
+music-dl http://gaana.com/playlist/gaana-dj-best-of-anuradha-paudwal
+music-dl https://www.saavn.com/s/album/hindi/Yaara-Dildara-1993/OKbWYkAThtA_
+music-dl https://www.saavn.com/s/featured-playlists/english/Hello_Adele/EFoglaGFXps_
 ```
 
 ### How to get/create an API key for YouTube?
