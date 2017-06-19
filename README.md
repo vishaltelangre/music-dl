@@ -4,6 +4,9 @@
 
 Download music from saavn.com, gaana.com, etc.
 
+
+[![npm](https://img.shields.io/npm/v/music-dl.svg?style=plastic)](https://www.npmjs.com/package/music-dl) [![npm](https://img.shields.io/npm/dt/music-dl.svg?style=plastic)](https://www.npmjs.com/package/music-dl) [![npm](https://img.shields.io/github/license/vishaltelangre/music-dl.svg?style=plastic)](LICENSE.txt)
+
 ### See it in action!
 
 [![asciicast](https://user-images.githubusercontent.com/876195/27260168-c5d803fc-5442-11e7-8163-a08955d424ca.gif)](https://asciinema.org/a/125142?t=4)
@@ -18,6 +21,10 @@ but there will be support to download from other sites as well
 in future.
 
 ### Installation
+
+Please make sure that you have `node v6.x` or latest 
+and 
+`npm v5.x` or latest versions installed on your machine.
 
 ```
 npm install -g music-dl
