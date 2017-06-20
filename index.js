@@ -3,14 +3,20 @@
 const _ = require('lodash');
 const cli = require('cli');
 const colors = require('colors');
+const updateNotifier = require('update-notifier');
 
-const {name, version} = require('./package.json');
+const { name, version } = require('./package.json');
 
-const { Settings, SettingsManifestPath} = require('./lib/settings');
+const { Settings, SettingsManifestPath } = require('./lib/settings');
 const Saavn = require('./lib/providers/saavn');
 const Gaana = require('./lib/providers/gaana');
 
 const supportedProviders = [ Saavn, Gaana ];
+
+updateNotifier({
+  pkg: { name, version },
+  updateCheckInterval: 1000 * 60 * 60 * 24 * 1 // Every day
+}).notify();
 
 cli.enable('version');
 cli.setApp(name, version);
@@ -26,7 +32,8 @@ if (!!options.api_key) {
 }
 
 if (!Settings.getYouTubeApiKey()) {
-  cli.fatal("Please set the YouTube API key. Check --help for usage.");
+  cli.error("Please set the YouTube API key. Check --help for usage.");
+  return;
 }
 
 if (!cli.args[0]) {
@@ -47,5 +54,5 @@ const matchedProvider = _.find(supportedProviders, providerKlass => {
 if (matchedProvider) {
   (new matchedProvider(tracklistUrl)).downloadTracks();
 } else {
-  cli.fatal(`Couldn't identify the provided playlist/album URL: "${tracklistUrl}"`);
+  cli.error(`Couldn't identify the provided playlist/album URL: "${tracklistUrl}"`);
 }
