@@ -13,6 +13,7 @@
     "music-dl": "./index.js"
   },
   "dependencies": {
+    "check-node-version": "^2.1.0",
     "cli": "^1.0.1",
     "colors": "^1.1.2",
     "fluent-ffmpeg": "^2.1.2",
