@@ -41,7 +41,7 @@ Usage:
   music-dl [OPTIONS] URL_OF_ALBUM_OR_PLAYLIST_HERE
 
 Options:
-  -k, --api_key STRING   API Key of YoutTube
+  -k, --api_key STRING   API Key of YouTube
   -v, --version          Display the current version
   -h, --help             Display help and usage details
 ```
