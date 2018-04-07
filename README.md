@@ -22,8 +22,8 @@ in future.
 
 ### Installation
 
-Please make sure that you have `node v6.x` or latest 
-and 
+Please make sure that you have `node v6.x` or latest
+and
 `npm v5.x` or latest versions installed on your machine.
 
 ```
@@ -81,6 +81,6 @@ It then downloads the matching music from YouTube.
 
 ### Copyright and License
 
-Copyright (c) 2017, Vishal Telangre. All Rights Reserved.
+Copyright (c) 2017-2018, Vishal Telangre and Contributors. All Rights Reserved.
 
 This project is licenced under the [MIT License](LICENSE.txt).
