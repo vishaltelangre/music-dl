@@ -24,6 +24,6 @@
     "promise": "^8.0.1",
     "update-notifier": "^2.4.0",
     "youtube-search": "^1.1.0",
-    "ytdl-core": "^0.20.2"
+    "ytdl-core": "^0.29.7"
   }
 }

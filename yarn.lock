@@ -765,11 +765,13 @@ lru-cache@^4.0.1:
     pseudomap "^1.0.2"
     yallist "^2.1.2"
 
-m3u8stream@^0.2.1:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/m3u8stream/-/m3u8stream-0.2.2.tgz#02ef837253595f2557efab86c4234018e8a60da2"
+m3u8stream@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/m3u8stream/-/m3u8stream-0.6.2.tgz#c2c62ddce88156d80378dd59be010c8b8e9d120b"
+  integrity sha512-WsuM2bd5pPN80xvfrB+1DZqr4M7+kJl8byi6+ZCy6cmVjEiHhmr/desN53Ngsa6Hs13kYumeVgT4wL0oIJ+v6g==
   dependencies:
-    miniget "^1.1.0"
+    miniget "^1.4.0"
+    sax "^1.2.4"
 
 make-dir@^1.0.0:
   version "1.2.0"
@@ -797,9 +799,10 @@ min-document@^2.19.0:
   dependencies:
     dom-walk "^0.1.0"
 
-miniget@^1.1.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/miniget/-/miniget-1.2.0.tgz#0036373a26bbd52dbe6945fce6c8c0391e9e1241"
+miniget@^1.4.0, miniget@^1.5.3:
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/miniget/-/miniget-1.5.3.tgz#d796c7291970d1dfa28b646d9aba3fa6b377c5e8"
+  integrity sha512-6xiJs3ZGBdrNMlPNlEWirHhY53hSW33nG1Ytub9Cg5+jLhFPn9PGe4FmPZK9WlmDE1N7/8DEL7PGr7r9kbxwgw==
 
 minimatch@^3.0.0, minimatch@^3.0.4:
   version "3.0.4"
@@ -1409,11 +1412,12 @@ youtube-search@^1.1.0:
     xhr "^2.0.1"
     xml2js "~0.2.8"
 
-ytdl-core@^0.20.2:
-  version "0.20.2"
-  resolved "https://registry.yarnpkg.com/ytdl-core/-/ytdl-core-0.20.2.tgz#0c0a1cffc2d943196f0a0809f129876877b26dad"
+ytdl-core@^0.29.7:
+  version "0.29.7"
+  resolved "https://registry.yarnpkg.com/ytdl-core/-/ytdl-core-0.29.7.tgz#e63ce0b086a4543d827499bed22f53fdf4d16af2"
+  integrity sha512-mqPuZ1UyspT84lyV1FSU1UAoiQ4H5j52ba3sC1LC43OmL8qNaDIRCGffGlpiakQrc69qsplNWsWEZUF+J5bhJA==
   dependencies:
     html-entities "^1.1.3"
-    m3u8stream "^0.2.1"
-    miniget "^1.1.0"
+    m3u8stream "^0.6.2"
+    miniget "^1.5.3"
     sax "^1.1.3"
