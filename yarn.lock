@@ -377,14 +377,9 @@ exit@0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/exit/-/exit-0.1.2.tgz#0632638f8d877cc82107d30a0fff1a17cba1cd0c"
 
-extend@~3.0.0, extend@~3.0.1:
+extend@~3.0.0, extend@~3.0.1, extend@~3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/extend/-/extend-3.0.2.tgz#f8b1136b4071fbd8eb140aff858b1019ec2915fa"
-
-extend@~3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/extend/-/extend-3.0.2.tgz#f8b1136b4071fbd8eb140aff858b1019ec2915fa"
-  integrity sha512-fjquC59cD7CyW6urNXK0FBufkZcoiGG80wTuPujX590cB5Ttln20E2UB4S/WARVqhXffZl2LNgS+gQdPIIim/g==
 
 extsprintf@1.3.0:
   version "1.3.0"
@@ -804,9 +799,14 @@ libxmljs@>=0.17.1:
     nan "~2.5.0"
     node-pre-gyp "~0.6.32"
 
-lodash@^4.14.0, lodash@^4.17.5:
+lodash@^4.14.0:
   version "4.17.13"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.13.tgz#0bdc3a6adc873d2f4e0c4bac285df91b64fc7b93"
+
+lodash@^4.17.15:
+  version "4.17.15"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
+  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
 
 lowercase-keys@^1.0.0:
   version "1.0.1"
@@ -819,12 +819,12 @@ lru-cache@^4.0.1:
     pseudomap "^1.0.2"
     yallist "^2.1.2"
 
-m3u8stream@^0.6.2:
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/m3u8stream/-/m3u8stream-0.6.2.tgz#c2c62ddce88156d80378dd59be010c8b8e9d120b"
-  integrity sha512-WsuM2bd5pPN80xvfrB+1DZqr4M7+kJl8byi6+ZCy6cmVjEiHhmr/desN53Ngsa6Hs13kYumeVgT4wL0oIJ+v6g==
+m3u8stream@^0.6.3:
+  version "0.6.4"
+  resolved "https://registry.yarnpkg.com/m3u8stream/-/m3u8stream-0.6.4.tgz#c2cdeb8401d340cc476029e433177caa089a26e9"
+  integrity sha512-9WLF1VAtbVij03HWJKbVZ8L0orsoZiP53UljR5EwaDrozQFMsTGRDPe3PbzWV73He8a+j5H/hWZNoI2VkUSsiw==
   dependencies:
-    miniget "^1.4.0"
+    miniget "^1.6.1"
     sax "^1.2.4"
 
 make-dir@^1.0.0:
@@ -865,10 +865,10 @@ min-document@^2.19.0:
   dependencies:
     dom-walk "^0.1.0"
 
-miniget@^1.4.0, miniget@^1.5.3:
-  version "1.5.3"
-  resolved "https://registry.yarnpkg.com/miniget/-/miniget-1.5.3.tgz#d796c7291970d1dfa28b646d9aba3fa6b377c5e8"
-  integrity sha512-6xiJs3ZGBdrNMlPNlEWirHhY53hSW33nG1Ytub9Cg5+jLhFPn9PGe4FmPZK9WlmDE1N7/8DEL7PGr7r9kbxwgw==
+miniget@^1.6.0, miniget@^1.6.1:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/miniget/-/miniget-1.6.1.tgz#f1ae08a34e06a2b1c3ace568384ea0def2fe5813"
+  integrity sha512-I5oBwZmcaOuJrjQn7lpS29HM+aAZDbzKbX5ouxVyhFYdg6fA6YKOTwOCgzZQwlHuMek3FlCxz6eNrd4pOXbwOA==
 
 minimatch@^3.0.0, minimatch@^3.0.4:
   version "3.0.4"
@@ -1549,12 +1549,12 @@ youtube-search@^1.1.0:
     xhr "^2.0.1"
     xml2js "~0.2.8"
 
-ytdl-core@^0.29.7:
-  version "0.29.7"
-  resolved "https://registry.yarnpkg.com/ytdl-core/-/ytdl-core-0.29.7.tgz#e63ce0b086a4543d827499bed22f53fdf4d16af2"
-  integrity sha512-mqPuZ1UyspT84lyV1FSU1UAoiQ4H5j52ba3sC1LC43OmL8qNaDIRCGffGlpiakQrc69qsplNWsWEZUF+J5bhJA==
+ytdl-core@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/ytdl-core/-/ytdl-core-1.0.6.tgz#ced230fcfc506d50203affa15ea53a7c438bebda"
+  integrity sha512-6+g8ZRxO4V7U4U8HiE3R2Or7MSOl5g8BIZ4Z6Wa/cGsNyqu5IStMJiR3I+HfI+4jGtSaHzAM2SrkVtIrjGcBNA==
   dependencies:
     html-entities "^1.1.3"
-    m3u8stream "^0.6.2"
-    miniget "^1.5.3"
+    m3u8stream "^0.6.3"
+    miniget "^1.6.0"
     sax "^1.1.3"
