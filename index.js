@@ -10,7 +10,6 @@ PrerequisitesChecker(function() {
 
   const { name, version } = require('./package.json');
 
-  const { Settings, SettingsManifestPath } = require('./lib/settings');
   const Saavn = require('./lib/providers/saavn');
   const Gaana = require('./lib/providers/gaana');
 
@@ -23,21 +22,6 @@ PrerequisitesChecker(function() {
 
   cli.enable('version');
   cli.setApp(name, version);
-
-  const options = cli.parse({
-    api_key: ['k', 'API Key of YoutTube', 'string']
-  });
-
-  if (!!options.api_key) {
-    Settings.setYouTubeApiKey(options.api_key);
-
-    return cli.ok(`Stored key at: ${SettingsManifestPath}`);
-  }
-
-  if (!Settings.getYouTubeApiKey()) {
-    cli.error("Please set the YouTube API key. Check --help for usage.");
-    return;
-  }
 
   if (!cli.args[0]) {
     cli.error("Please provide the URL to the album/playlist of songs which you want to download.")
