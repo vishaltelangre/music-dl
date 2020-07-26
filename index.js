@@ -22,6 +22,7 @@ PrerequisitesChecker(function() {
 
   cli.enable('version');
   cli.setApp(name, version);
+  cli.parse();
 
   if (!cli.args[0]) {
     cli.error("Please provide the URL to the album/playlist of songs which you want to download.")
