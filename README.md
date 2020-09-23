@@ -20,9 +20,12 @@ in future.
 
 ### Installation
 
-Please make sure that you have `node v6.x` or latest
-and
-`npm v5.x` or latest versions installed on your machine.
+Please make sure that you have the following:
+
+- `node v6.x` or latest
+- `npm v5.x` or latest versions installed on your machine
+- `ffmpeg` (install using `sudo apt-get install ffmpeg` on ubuntu)
+
 
 ```
 npm install -g music-dl
